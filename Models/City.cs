@@ -1,16 +1,18 @@
-﻿namespace Flight_Dijkstra;
-
-public class City
+﻿namespace Flight_Dijkstra
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string Country { get; set; }
-    public string AirportCode { get; set; }
-    public float Latitude { get; set; }
-    public float Longitude { get; set; }
 
-    public string GetInfo()
+    public class City
     {
-        return $"{Name} ({AirportCode}), {Country}";
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+        public string AirportCode { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
+
+        public string GetInfo()
+        {
+            return $"{Name} ({AirportCode}), {Country}";
+        }
     }
 }

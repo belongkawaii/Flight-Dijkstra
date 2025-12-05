@@ -1,6 +1,8 @@
-﻿namespace Flight_Dịkstra;
-
-public class Graph
+﻿namespace Flight_Dijkstra
 {
-    
+
+    public class Graph
+    {
+
+    }
 }
