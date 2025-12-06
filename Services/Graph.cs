@@ -37,21 +37,27 @@ namespace Flight_Dijkstra
             }).ToList();
 
             // 3. BUILD ADJACENCY LIST (Danh sách kề)
+            BuildAdjacencyList();
+        }
+
+        public void BuildAdjacencyList()
+        {
+            // Reset lại danh sách kề
             Adj = new List<List<Flight>>();
 
-            
+            if (Cities.Count == 0) return;
 
-            // Tạo list rỗng cho tất cả các thành phố (bao gồm cả index 0 dù không dùng)
+            // Tạo các List rỗng cho từng thành phố
+            // (Dựa vào Max Id để đảm bảo index không bị lỗi)
             int maxId = Cities.Max(c => c.Id);
             for (int i = 0; i <= maxId; i++)
             {
                 Adj.Add(new List<Flight>());
             }
 
-            // Đổ dữ liệu vào Adj
-            foreach (var flight in dbFlights)
+            // Đổ dữ liệu từ _allFlights vào đúng "ngăn" của thành phố nguồn
+            foreach (var flight in _allFlights)
             {
-                // Flight từ thành phố có Id nào sẽ chui vào List của index đó
                 if (flight.SourceCityId < Adj.Count)
                 {
                     Adj[flight.SourceCityId].Add(flight);
