@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FlightDijkstra">
+  <DataContextMoniker Name="/FlightDijkstraDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f83cd4bd-24bd-4c29-b331-a11069173846" absoluteBounds="0.75, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/FlightDijkstraDataContext/City" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea20ea4a-0aa8-49ff-80ad-6de790f3700d" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76aee835-0b3f-44bd-b41e-0e107b81c3f9" absoluteBounds="3.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/FlightDijkstraDataContext/Flight" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9d045e5-9cc8-438b-b51f-826bb4ceb690" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.85659912109375); (3.5 : 1.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FlightDijkstraDataContext/City/City_Flight" />
+      <nodes>
+        <classShapeMoniker Id="f83cd4bd-24bd-4c29-b331-a11069173846" />
+        <classShapeMoniker Id="76aee835-0b3f-44bd-b41e-0e107b81c3f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.30329956054688); (3.5 : 1.30329956054688)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FlightDijkstraDataContext/City/City_Flight1" />
+      <nodes>
+        <classShapeMoniker Id="f83cd4bd-24bd-4c29-b331-a11069173846" />
+        <classShapeMoniker Id="76aee835-0b3f-44bd-b41e-0e107b81c3f9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
