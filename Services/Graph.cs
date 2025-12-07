@@ -8,6 +8,7 @@ namespace Flight_Dijkstra
     {
         public List<City> Cities = new List<City>();
         public List<List<Flight>> Adj = new List<List<Flight>>();
+        private List<Flight> _allFlights = new List<Flight>();
 
         public void LoadFromDatabase()
         {
