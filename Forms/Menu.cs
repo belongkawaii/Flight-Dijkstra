@@ -122,8 +122,7 @@ namespace Flight_Dijkstra.Forms
         {
             GenerateRandomPoints(10); // random 10 điểm
         }
-
-
+        
         private void Exit_Click(object sender, EventArgs e)
         {
             Close();

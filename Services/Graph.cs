@@ -1,4 +1,4 @@
-﻿namespace Flight_Dijkstra
+﻿namespace Flight_Dijkstra.Services
 {
 
     public class Graph
