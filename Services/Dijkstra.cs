@@ -16,17 +16,21 @@ namespace Flight_Dịkstra
             get => _dist;
             set => _dist = value;
         }
-
         public List<int> Prev
         {
             get => _prev;
             set => _prev = value;
         }
-
         public Graph Graph
         {
             get => _graph;
             set => _graph = value;
+        }
+        public Dijkstra(List<double> dist, List<int> prev, Graph graph)
+        {
+            _dist = dist;
+            _prev = prev;
+            _graph = graph;
         }
 
         public Dijkstra()
